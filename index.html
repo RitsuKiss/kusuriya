@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kusuriya no Hitorigoto</title>
+    <style>
+        body{
+            overflow: hidden;
+            background-image: url(background.png);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            position: fixed;
+            left: 5%;
+            top: 5%;
+        }
+        nav button{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            color: #fff;
+            font-size: 2rem;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+        nav button:hover{
+            font-size: 2.5rem;
+        }
+        .active {
+            border-bottom: 5px solid rgb(255, 255, 255);
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            position: relative; /* Tambahkan position relative */
+        }
+        main img{
+            position: absolute;
+            height: 120vh;
+            left: 12.5%;
+            z-index: -200;
+            clip-path: inset(0 40rem 0 0); /* atas, kanan, bawah, kiri */
+        }
+        section{
+            position: absolute;
+            right: 0;
+            bottom: 5%;
+            width: 50rem;
+            color: #fff;
+        }
+        .tittle{
+            font-size:5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="active">Home</button>
+            <button onclick="window.location.href='halaman-baru.html'">Anime</button>
+            <button onclick="window.location.href='halaman-baru.html'">Manga</button>
+            <button onclick="window.location.href='About.html'">About</button>
+        </nav>
+    </header>
+    <main>
+        <img src="mao.png">
+        <div class="side-menu">
+            <img src="facebook.png">
+            <img src="instagram.png">
+        </div>
+        <section>
+            <div class="tittle">
+                Kusuriya no Hitorigoto
+            </div>
+            <div class="subtittle">
+                About the Story
+            </div>
+            <div class="description">
+                Maomao, an apothecary's daughter, has been plucked from her peaceful life and sold to the lowest echelons of the imperial court. Now merely a maid, Maomao settles into her new mundane life and hides her extensive knowledge of medicine in order to avoid any unwanted attention.
+                Not long after Maomao's arrival, the emperor's infant children inexplicably begin to experience grave symptoms—almost as if a curse has been cast. The curious Maomao easily solves the mystery and, to remain out of the limelight, attempts to leave an anonymous tip. Unfortunately, the dashing and perceptive eunuch Jinshi sees through it and manages to single her out.
+                In recognition of her talent, Maomao is promoted to lady-in-waiting for the emperor's favorite concubine, Gyokuyou. As Maomao continues to remedy the numerous ailments afflicting the imperial court, her pharmaceutical expertise quickly proves indispensable.
+            </div>
+            <div class="button">
+                <button>Watch Now</button>
+                <button>Read Now</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

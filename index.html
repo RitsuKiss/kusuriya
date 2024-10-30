@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <meta charset="UTF-8" />
+
     <title>Kusuriya no Hitorigoto</title>
+
     <style>
+
     body{ 
+
             overflow: hidden;
 
             background-image: url(background.png);
@@ -19,7 +26,7 @@
 
         nav{
 
-            position: fixed;
+            position: absolute;
 
             left: 5%;
 
@@ -43,12 +50,6 @@
 
         }
 
-        nav button:hover{
-
-            font-size: 2.5rem;
-
-        }
-
         .active {
 
             border-bottom: 5px solid rgb(255, 255, 255);
@@ -57,11 +58,13 @@
 
         main{
 
-            width: 100vw;
+            width: 100%;
 
-            height: 100vh;
+            height: 100%;
 
-            position: relative; /* Tambahkan position relative */
+            position:absolute;
+
+            overflow: hidden;
 
         }
 
@@ -111,85 +114,169 @@
 
         }
 
+
+
 /* Responsif untuk layar dengan lebar kurang dari 768px */
+
 @media (max-width: 768px) {
 
+
+
     nav {
+
         top: 2.5%;
+
     }
+
+
 
     nav button {
+
         font-size: 1rem;
+
         padding: 0.25rem;
+
         margin: 0.5rem;
+
     }
+
+
 
     main img {
+
         height: 60vh;
+
         clip-path: inset(0 20rem 0 0); /* Sesuaikan potongan untuk perangkat lebih kecil */
+
     }
+
+
 
     section {
+
         right: 1rem;
+
         bottom: 5rem;
+
         width: 90vw;
+
         text-align: left;
+
         padding: 0 1rem;
+
         overflow: hidden; /* Pastikan tidak ada scroll pada section */
+
     }
+
+
 
     .tittle {
+
         font-size: 2rem;
+
         font-weight: bold;
+
     }
+
+
 
     .subtittle {
+
         font-size: 1rem;
+
         font-weight: bold;
+
     }
 
+
+
     .description {
+
         max-height: 15rem;
+
         overflow-y: auto; /* Scroll khusus konten yang memerlukan scroll */
+
     }
+
 }
+
+
 
         
 
+
+
     </style>
+
 </head>
+
 <body>
+
     <header>
+
         <nav>
+
             <button class="active">Home</button>
-            <button onclick="window.location.href='halaman-baru.html'">Anime</button>
-            <button onclick="window.location.href='halaman-baru.html'">Manga</button>
-            <button onclick="window.location.href='About.html'">About</button>
+
+            <button onclick="window.location.href=''">Anime</button>
+
+            <button onclick="window.location.href=''">Manga</button>
+
+            <button onclick="window.location.href=''">About</button>
+
         </nav>
+
     </header>
+
     <main>
+
         <img src="mao.png">
+
         <div class="side-menu">
+
             <img src="facebook.png">
+
             <img src="instagram.png">
+
         </div>
+
         <section>
+
             <div class="tittle">
+
                 Kusuriya no Hitorigoto
+
             </div>
+
             <div class="subtittle">
+
                 About the Story
+
             </div>
+
             <div class="description">
+
                 Maomao, an apothecary's daughter, has been plucked from her peaceful life and sold to the lowest echelons of the imperial court. Now merely a maid, Maomao settles into her new mundane life and hides her extensive knowledge of medicine in order to avoid any unwanted attention.
+
                 Not long after Maomao's arrival, the emperor's infant children inexplicably begin to experience grave symptoms—almost as if a curse has been cast. The curious Maomao easily solves the mystery and, to remain out of the limelight, attempts to leave an anonymous tip. Unfortunately, the dashing and perceptive eunuch Jinshi sees through it and manages to single her out.
+
                 In recognition of her talent, Maomao is promoted to lady-in-waiting for the emperor's favorite concubine, Gyokuyou. As Maomao continues to remedy the numerous ailments afflicting the imperial court, her pharmaceutical expertise quickly proves indispensable.
+
             </div>
+
             <div class="button">
+
                 <button>Watch Now</button>
+
                 <button>Read Now</button>
+
             </div>
+
         </section>
+
     </main>
+
 </body>
+
 </html>
+
